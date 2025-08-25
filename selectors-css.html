@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Selectors</title>
+    <style>
+        /* universal selector */
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            color: black;
+        }
+        .header{
+            background-color: blue;
+            padding: 12px;
+            text-align: center;
+            color: white;
+            
+        }
+        #parent{
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+        #child{
+            flex: 1;
+            padding: 20px;
+            background: lightblue;
+            text-align: center;
+            border: 10px solid rgb(138, 203, 225);
+            border-radius: 20px;
+        }
+        .footer{
+            margin-top: auto;
+            position: relative;
+            background-color: rgb(49, 49, 221);
+            text-align: center;
+            bottom: 0;
+            padding: 10px;
+        }
+        html, body{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    1. Universal Selectors
+    2. Type Selectors
+    3. ID Selectors
+    4. Class Selectors
+    5. Pseudo Selectors
+    6. Combinator Selectors
+    -->
+    <header class="header"><h2 id="heading">About CSS Selectors.</h2></header>
+    <div id="parent">
+        <div id="child"><h4>Support Ops Specialist:</h4>
+    <p>Automated repetitive web-based workflows using JavaScript and browser scripting to improve efficiency and 
+        reduce manual intervention. Developed dynamic scripts with retry mechanisms, conditional logic, and error 
+        handling to ensure consistent execution across multiple systems. Designed centralized script management 
+        solutions for cross-device synchronization and real-time updates. Integrated notification systems with 
+        collaboration tools to deliver automated status alerts and workflow updates. Leveraged AWS services such 
+        as Lambda and SNS to build serverless automation pipelines and event-driven notifications. Implemented 
+        webhook-based integrations to streamline communication between applications and internal tools. 
+        Enhanced operational reliability by incorporating monitoring, logging, and failure recovery mechanisms into 
+        automation scripts. Collaborated on optimizing timing, event handling, and DOM interactions for stable 
+        automation in complex web applications.</p></div>
+    <div id="child">
+        <h4>Infra Managed Serivde Associate:</h4>
+    <p>Developed and maintained modern web applications using HTML, CSS, and JavaScript. Leveraged expertise in 
+        React.js and other modern frameworks to create dynamic and interactive user interfaces. Collaborated 
+        closely with cross-functional teams to ensure seamless integration of frontend components. 
+        Demonstrated strong problem-solving abilities to address technical challenges and optimize code 
+        performance. Actively contributed to design discussions, offering insights to enhance user experience 
+        and interface aesthetics. Stayed updated with industry trends and emerging technologies to drive 
+        continuous improvement and innovation in frontend development.</p>
+    </div>
+    </div>
+
+    
+    <footer class="footer">
+        All rights are reserved by @RMSP
+    </footer>
+</body>
+</html>

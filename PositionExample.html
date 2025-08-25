@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Position Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 200vh; /* make page scrollable */
+    }
+
+    .box {
+      width: 150px;
+      height: 100px;
+      padding: 10px;
+      color: white;
+      text-align: center;
+      line-height: 100px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    /* 1. Static */
+    .static {
+      position: static;
+      background: gray;
+    }
+
+    /* 2. Relative */
+    .relative {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      background: blue;
+    }
+
+    /* 3. Absolute */
+    .container {
+      position: relative;
+      border: 2px dashed black;
+      height: 150px;
+      margin: 20px;
+    }
+    .absolute {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: green;
+    }
+
+    /* 4. Fixed */
+    .fixed {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: red;
+    }
+
+    /* 5. Sticky */
+    .sticky {
+      position: sticky;
+      top: 0;
+      background: purple;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Position Examples</h2>
+
+  <div class="box static">Static</div>
+
+  <div class="box relative">Relative</div>
+
+  <div class="container">
+    Parent (Relative container)
+    <div class="box absolute">Absolute</div>
+  </div>
+
+  <div class="box sticky">Sticky (scroll down)</div>
+
+  <p style="margin:20px;">
+    Scroll down to see how <b>sticky</b> and <b>fixed</b> behave differently.  
+    The <b>sticky</b> box will stay at the top of the page until its parent ends,  
+    while the <b>fixed</b> box stays pinned to the viewport.
+  </p>
+
+  <div class="box fixed">Fixed</div>
+
+</body>
+</html>
