@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms Complete Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    form {
+      width: 60%;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 5px;
+    }
+    fieldset {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Complete HTML Form Example</h1>
+
+  <form action="/submit" method="post">
+    
+    <!-- Text Input -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <!-- Email -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="6" required>
+
+    <!-- Number -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100">
+
+    <!-- Date -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+
+    <!-- Radio Buttons -->
+    <fieldset>
+      <legend>Gender</legend>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+    </fieldset>
+
+    <!-- Checkbox -->
+    <fieldset>
+      <legend>Skills</legend>
+      <input type="checkbox" id="html" name="skills" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="checkbox" id="css" name="skills" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="checkbox" id="js" name="skills" value="JavaScript">
+      <label for="js">JavaScript</label>
+    </fieldset>
+
+    <!-- Dropdown -->
+    <label for="country">Select Country:</label>
+    <select id="country" name="country">
+      <option value="">--Choose an option--</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="australia">Australia</option>
+    </select>
+
+    <!-- Textarea -->
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Write something..."></textarea>
+
+    <!-- File Upload -->
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+
+    <!-- Hidden Field -->
+    <input type="hidden" name="formID" value="12345">
+
+    <!-- Reset & Submit -->
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>

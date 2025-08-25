@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tables Complete Example</title>
+  <style>
+    table {
+      border-collapse: collapse; /* removes double borders */
+      width: 70%;
+      margin: 20px auto;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    th {
+      background-color: lightgray;
+    }
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin: 10px;
+    }
+    .highlight {
+      background-color: #f5f5a5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Basic Table -->
+  <table>
+    <caption>Employee Details</caption>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Role</th>
+    </tr>
+    <tr>
+      <td>Alice</td>
+      <td>25</td>
+      <td>Developer</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>28</td>
+      <td>Designer</td>
+    </tr>
+  </table>
+
+  <!-- Table with Colspan -->
+  <table>
+    <caption>Monthly Sales Report</caption>
+    <tr>
+      <th>Month</th>
+      <th colspan="2">Sales</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Online</th>
+      <th>Offline</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>1200</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>1500</td>
+      <td>950</td>
+    </tr>
+  </table>
+
+  <!-- Table with Rowspan -->
+  <table>
+    <caption>Student Marks</caption>
+    <tr>
+      <th rowspan="2">Name</th>
+      <th colspan="2">Subjects</th>
+    </tr>
+    <tr>
+      <th>Math</th>
+      <th>Science</th>
+    </tr>
+    <tr>
+      <td>Emma</td>
+      <td>90</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>Liam</td>
+      <td>88</td>
+      <td>92</td>
+    </tr>
+  </table>
+
+  <!-- Complex Table Example -->
+  <table>
+    <caption>Timetable</caption>
+    <tr>
+      <th>Day</th>
+      <th>9-10 AM</th>
+      <th>10-11 AM</th>
+      <th>11-12 PM</th>
+    </tr>
+    <tr>
+      <td>Monday</td>
+      <td rowspan="2" class="highlight">Math</td>
+      <td>Science</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td colspan="2" class="highlight">Computer Lab</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td>History</td>
+      <td>Math</td>
+      <td>Geography</td>
+    </tr>
+  </table>
+
+</body>
+</html>

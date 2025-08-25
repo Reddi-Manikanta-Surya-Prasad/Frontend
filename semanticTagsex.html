@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Webpage</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #4a90e2;
+    }
+
+    main {
+      display: flex;
+      padding: 20px 40px;
+      gap: 20px;
+    }
+
+    section {
+      flex: 3;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    article {
+      margin-bottom: 20px;
+    }
+
+    article h2 {
+      margin-bottom: 10px;
+      color: #4a90e2;
+    }
+
+    aside {
+      flex: 1;
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Semantic Webpage</h1>
+    <p>Learning semantic HTML with styles</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Articles</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <section>
+      <article>
+        <h2>What is Semantic HTML?</h2>
+        <p>Semantic HTML uses meaningful tags like &lt;header&gt;, &lt;nav&gt;, 
+        &lt;section&gt;, &lt;article&gt;, and &lt;footer&gt; to structure web content, 
+        making it more readable for both developers and search engines.</p>
+      </article>
+
+      <article>
+        <h2>Why Use Semantic Tags?</h2>
+        <p>They improve accessibility, SEO, and make your code easier to maintain. 
+        Screen readers and search engines rely on semantic tags to better 
+        understand the content of a webpage.</p>
+      </article>
+    </section>
+
+    <aside>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">HTML Basics</a></li>
+        <li><a href="#">CSS Styling</a></li>
+        <li><a href="#">JavaScript Intro</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Semantic Webpage | Designed with ❤️</p>
+  </footer>
+
+</body>
+</html>
